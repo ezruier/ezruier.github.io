@@ -58,3 +58,52 @@ body {
 .posts .post-meta {
   color: #bababa;
 }
+.archive {
+  margin: 1em auto;
+  padding: 30px 50px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 2px #ddd;
+}
+.archive .post-archive {
+  list-style: none;
+  padding: 0;
+}
+.archive .post-archive .post-item {
+  margin: 5px 0;
+}
+.archive .post-archive .post-item .post-date {
+  display: inline-block;
+  margin-right: 10px;
+  color: #bababa;
+}
+.archive .post-archive .post-item .post-title {
+  color: #368ccb;
+  text-decoration: none;
+}
+.page-nav {
+  text-align: center;
+  font-size: 0.7em;
+  padding: 0.5em;
+  margin: 5em 0;
+  font-weight: bold;
+}
+.page-nav > * {
+  margin-right: 0.5em;
+  padding: 0.5em;
+  border-bottom: 1px dotted #ccc;
+  text-decoration: none;
+}
+.page-nav a:active,
+.page-nav a:link,
+.page-nav a:visited {
+  color: blue-color;
+}
+.page-nav .current {
+  color: #333;
+}
+.about_content {
+  font-family: "Comic Sans MS", cursive, LiSu, sans-serif;
+  color: #aaa;
+  font-size: 1em;
+}
