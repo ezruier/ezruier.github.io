@@ -1,6 +1,7 @@
 .header {
   padding-top: 10px;
   margin: 5px;
+  margin-top: 10px;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -11,9 +12,12 @@
 .header .blog-title .logo {
   color: #aaa;
   font-size: 20px;
-  font-family: "Comic Sans MS", cursive, LiSu, sans-serif;
+  font-family: 'Comic Sans MS', cursive, LiSu, sans-serif;
   text-decoration: none;
   margin-left: 10px;
+}
+.header .blog-title:hover {
+  animation: logoam 1s infinite 1s;
 }
 .header .menu {
   margin: 0;
@@ -30,6 +34,78 @@
 .header .menu .menu-item-link:hover {
   color: #368ccb;
 }
+@-moz-keyframes logoam {
+  0% {
+    transform-origin: -100px;
+    transform: rotate(15deg);
+  }
+  25% {
+    transform-origin: -100px;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform-origin: -100px;
+    transform: rotate(15deg);
+  }
+  100% {
+    transform-origin: -100px;
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes logoam {
+  0% {
+    transform-origin: -100px;
+    transform: rotate(15deg);
+  }
+  25% {
+    transform-origin: -100px;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform-origin: -100px;
+    transform: rotate(15deg);
+  }
+  100% {
+    transform-origin: -100px;
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes logoam {
+  0% {
+    transform-origin: -100px;
+    transform: rotate(15deg);
+  }
+  25% {
+    transform-origin: -100px;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform-origin: -100px;
+    transform: rotate(15deg);
+  }
+  100% {
+    transform-origin: -100px;
+    transform: rotate(0deg);
+  }
+}
+@keyframes logoam {
+  0% {
+    transform-origin: -100px;
+    transform: rotate(15deg);
+  }
+  25% {
+    transform-origin: -100px;
+    transform: rotate(0deg);
+  }
+  50% {
+    transform-origin: -100px;
+    transform: rotate(15deg);
+  }
+  100% {
+    transform-origin: -100px;
+    transform: rotate(0deg);
+  }
+}
 .posts {
   display: flex;
   flex-wrap: wrap;
@@ -45,12 +121,12 @@
   box-sizing: border-box;
   text-align: center;
   background-color: #fff;
-  box-shadow: 0 0 2px #ccc;
+  border-bottom: 1px solid #ddd;
   -webkit-transition: 0.5s;
   transition: 0.2s;
 }
 .posts .post:hover {
-  box-shadow: 0 0 4px rgba(0,0,0,0.376);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.376);
   -webkit-transform: scale(1.01);
   transform: scale(1.01);
 }
@@ -120,6 +196,15 @@
 .backTop a:hover {
   background-color: #bbb;
 }
+.w {
+  box-shadow: 0 0 2px #ccc;
+  overflow: hidden;
+  margin: 10px auto;
+}
 main {
   padding: 50px;
+}
+*[bimg] {
+  height: 4vw;
+  width: 4vw;
 }
